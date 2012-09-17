@@ -7,9 +7,8 @@
       y))
 
 ;; Ex 1.8
-;; なぜか処理が終了しない。 2012/9/17(月)
 (define (good-enough? guess x)
-  (<= (abs (- guess x)) 0.001))
+  (< (abs (- (* guess guess guess) x)) 0.001))
 
 (define (cube-root-iter guess x)
   (if (good-enough? guess x)
