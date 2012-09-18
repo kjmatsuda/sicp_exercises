@@ -24,3 +24,11 @@
 (define (cube-root x)
   (cube-root-iter 1.0 x))
 
+;; Ex 1.11
+;; recursive process
+(define (recursive-calc x)
+  (if (< x 3)
+      x
+      (+ (recursive-calc (- x 1))
+	 (* 2 (recursive-calc (- x 2)))
+	 (* 3 (recursive-calc (- x 3))))))
