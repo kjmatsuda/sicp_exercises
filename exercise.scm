@@ -50,4 +50,54 @@
 			 p
 			 q
 			 (- count 1)))))
-	 
+
+;; Ex 1.22
+
+;;gauche用runtime(現在時刻)関数
+;;sys-gettimeofdayは(values 秒数 マイクロ秒)を返す
+(define (runtime)
+  (use srfi-11)
+  (let-values (((a b) (sys-gettimeofday)))
+              (+ (* a 1000000) b)))
+
+(define (timed-prime-test n)
+  (newline)
+  (display n)
+  (start-prime-test n (runtime)))
+
+(define (start-prime-test n start-time)
+  (if (prime? n)
+      (report-prime (- (runtime) start-time))))
+
+(define (report-prime elapsed-time)
+  (display " *** ")
+  (display elapsed-time))
+
+(define (prime? n)
+  (= n (smallest-divisor n)))
+
+(define (smallest-divisor n)
+  (find-divisor n 2))
+
+(define (find-divisor n test-devisor)
+  (cond ((> (* test-devisor test-devisor) n) n)
+	((divides? test-devisor n) test-devisor)
+	(else (find-divisor n (+ test-devisor 1)))))
+
+(define (divides? a b)
+  (= (remainder b a) 0))
+
+;; 連続した奇数から素数を見つける関数
+;; 特定の範囲: start から end まで
+;; 問題(Ex 1.22)中で最小の素数3つを取得するのにかかる時間を測定するので
+;; goal で制御する
+(define (search-for-primes start end found-prime goal)
+  (if (and (< start end) (< found-prime goal))
+      (if (prime? start)
+	  ;; 素数が見つかった
+	  (search-for-primes (+ start 2) end (+ found-prime 1) goal)
+	  (if (= (remainder start 2) 0)
+	      ;; 偶数だったとき
+	      (search-for-primes (+ start 1) end found-prime goal)
+	      ;; 奇数だったとき
+	      (search-for-primes (+ start 2) end found-prime goal)))))
