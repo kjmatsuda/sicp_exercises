@@ -92,12 +92,29 @@
 ;; 問題(Ex 1.22)中で最小の素数3つを取得するのにかかる時間を測定するので
 ;; goal で制御する
 (define (search-for-primes start end found-prime goal)
-  (if (and (< start end) (< found-prime goal))
-      (if (prime? start)
-	  ;; 素数が見つかった
-	  (search-for-primes (+ start 2) end (+ found-prime 1) goal)
-	  (if (= (remainder start 2) 0)
+  (cond ((>= found-prime goal)
+	 (display "search finished. We reach goal!"))
+	((>=  start end)
+	 (display "search finished."))
+	((prime? start)
+	 ;; 素数が見つかった
+	 ;; (display start)
+	 ;; (newline)
+	 (search-for-primes (+ start 2) end (+ found-prime 1) goal))
+	(else
+	 (if (= (remainder start 2) 0)
 	      ;; 偶数だったとき
 	      (search-for-primes (+ start 1) end found-prime goal)
 	      ;; 奇数だったとき
 	      (search-for-primes (+ start 2) end found-prime goal)))))
+
+(define (timed-search-for-primes-test n)
+  (display "search start from ")
+  (display n)
+  (newline)
+  (start-search-for-primes-test n (runtime)))
+
+(define (start-search-for-primes-test n start-time)
+  ;; when three primes are found, search is finished.
+  (search-for-primes n (* 10 n) 0 3)
+  (report-prime (- (runtime) start-time)))
