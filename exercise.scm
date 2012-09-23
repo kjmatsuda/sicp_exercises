@@ -118,3 +118,14 @@
   ;; when three primes are found, search is finished.
   (search-for-primes n (* 10 n) 0 3)
   (report-prime (- (runtime) start-time)))
+
+;; Ex 1.23
+(define (find-divisor n test-devisor)
+  (cond ((> (* test-devisor test-devisor) n) n)
+	((divides? test-devisor n) test-devisor)
+	(else (find-divisor n (next test-devisor)))))
+
+(define (next n)
+  (if (= n 2)
+      3
+      (+ n 2)))
