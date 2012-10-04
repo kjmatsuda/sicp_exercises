@@ -137,3 +137,62 @@
 	result
 	(iter (next a) (+ result (term a)))))
   (iter a (term a))) ;; 間違い。正しくは (iter a 0)
+
+;; Ex 1.31
+;; answer for a
+(define (product term a next b)
+  (if (> a b)
+      1
+      (* (term a)
+	 (product term (next a) next b))))
+
+(define (factorial n)
+  (define (identity x) x)
+  (define (fact-next x) (+ x 1))
+  (product identity 1 fact-next n))
+
+;; approximation for pi
+(define (square-product a b)
+  (define (square x)
+    (* x x))
+  (define (next x)
+    (+ 2 x))
+  (product square a next b))
+
+(define (approximate-pi n)
+  (/ (/ (square-product 4 n)
+	(square-product 3 n))
+     2.0))
+
+;; answer for b
+;; it generates iterative process
+(define (product term a next b)
+  (define (iter a result)
+    (if (> a b)
+	result
+	(iter (next a) (* result (term a)))))
+  (iter a 1))
+
+;; Ex 1.32
+;; answer for a
+;; write more abstruct procedure than sum and product
+;; this generates recursive process
+(define (accumulate combiner null-value term a next b)
+  (if (> a b)
+      null-value
+      (combiner (term a)
+		(accumulate combiner null-value term (next a) next b))))
+;; use accumulate above, write easier version of sum and product
+(define (sum term a next b)
+  (accumulate + 0 term a next b))
+
+(define (product term a next b)
+  (accumulate * 1 term a next b))
+
+;; iterative vesion of accumulate
+(define (accumulate combiner null-value term a next b)
+  (define (iter combiner a result)
+    (if (> a b)
+	result
+	(iter combiner (next a) (combiner a result))))
+  (iter combiner a null-value))
