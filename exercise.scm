@@ -196,3 +196,32 @@
 	result
 	(iter combiner (next a) (combiner a result))))
   (iter combiner a null-value))
+
+;; Ex 1.34
+(define (f g)
+  (g 2))
+
+;; Ex 1.36
+;; modify fixed-point so that it prints the sequence of approximations
+(define tolerance 0.00001)
+(define (fixed-point-print-process f first-guess)
+  (define (close-enough? v1 v2)
+    (< (abs (- v1 v2)) tolerance))
+  (define (try guess)
+    (let ((next (f guess)))
+      (display "current value:")
+      (display guess)
+      (newline)
+      (display "next value:")
+      (display next)
+      (newline)
+      (newline)
+      (if (close-enough? guess next)
+	  next
+	  (try next))))
+  (try first-guess))
+
+(define (search-for-answer-of-lambda)
+  (fixed-point-print-process (lambda (y) (/ (log 1000)
+					    (log y)))
+			     1.1))
