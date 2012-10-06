@@ -225,3 +225,27 @@
   (fixed-point-print-process (lambda (y) (/ (log 1000)
 					    (log y)))
 			     1.1))
+;; Ex 1.41
+(define (inc x)
+  (+ x 1))
+
+(define (square x)
+  (* x x))
+(define (double func)
+  (lambda (x) (func (func x))))
+
+;; Ex 1.42
+(define (compose f g)
+  (lambda (x) (f (g x))))
+;; 確認
+;; ((compose square inc) 6)
+;; 49
+
+;; Ex 1.43
+(define (repeated f n)
+  (if (<= n 1)
+      f
+      (repeated (compose f f) (- n 1))))
+;; 確認
+;; ((repeated square 2) 5)
+;; 625
