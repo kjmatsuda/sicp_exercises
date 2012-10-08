@@ -249,3 +249,16 @@
 ;; 確認
 ;; ((repeated square 2) 5)
 ;; 625
+
+;; Ex 2.1
+(define (make-rat n d)
+  (let ((signed-n (* (normalize-sign n d) n))
+	(signed-d (* (normalize-sign n d) d)))
+    (let ((g (gcd signed-n signed-d)))
+      (cons (/ n g) (/ d g)))))
+
+(define (normalize-sign n d)
+  (if (or (and (< n 0) (< d 0))
+	  (and (> n 0) (< d 0)))
+      -1
+      1))
