@@ -320,3 +320,4 @@
 (define (percent i)
   (/ (center i)
      (/ width 2))) ;; width を2で割る必要はなさそうだ
+                   ;; 分母、分子が逆になってる
