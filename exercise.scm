@@ -302,3 +302,21 @@
   (display ",")
   (display (y-point p))
   (display ")"))
+
+;; Ex 2.7
+(define (lower-bound interval)
+  (car interval))
+
+(define (upper-bound interval)
+  (cdr interval))
+
+;; Ex 2.12
+;; make-center-width を使って表現すればよかった
+;; percent が0~100であることを考慮に入れてなかった
+(define (make-center-percent c percent)
+  (make-interval (- c (* c percent))
+		 (+ c (* c percent))))
+
+(define (percent i)
+  (/ (center i)
+     (/ width 2))) ;; width を2で割る必要はなさそうだ
