@@ -327,3 +327,11 @@
   (if (null? (cdr items))
       items
       (last-pair (cdr items))))
+
+;; Ex 2.18
+(define (reverse items)
+  (if (null? (cdr items))
+      (car items)
+      (cons (reverse (cdr items)) (car items))))
+;; (reverse (list 1 4 9 16 25))
+;;  => ((((25 . 16) . 9) . 4) . 1) が返ってきて何かおかしい
