@@ -335,3 +335,31 @@
       (cons (reverse (cdr items)) (car items))))
 ;; (reverse (list 1 4 9 16 25))
 ;;  => ((((25 . 16) . 9) . 4) . 1) が返ってきて何かおかしい
+
+;; Ex 2.20
+(define nil '())
+(define (both-even-or-odd x y)
+  ;; 奇数同士、もしくは偶数同士であれば #t を返す
+  (if (or (and (= (remainder x 2) 1)
+	       (= (remainder y 2) 1))
+	  (and (= (remainder x 2) 0)
+	       (= (remainder y 2) 0)))
+      #t
+      #f))
+
+(define (same-parity first-elem . option)
+  (define (iter-parity rest result)
+    ;;;; for debug
+    ;; (display "残り：")
+    ;; (display rest)
+    ;; (newline)
+    ;; (display "結果：")
+    ;; (display result)
+    ;; (newline)
+    ;; (newline)    
+    (if (null? rest)
+	result
+	(if (both-even-or-odd first-elem (car rest))
+	    (iter-parity (cdr rest) (append result (list (car rest))))
+	    (iter-parity (cdr rest) result))))
+  (iter-parity option (list first-elem)))
