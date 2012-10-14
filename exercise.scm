@@ -321,3 +321,9 @@
   (/ (center i)
      (/ width 2))) ;; width を2で割る必要はなさそうだ
                    ;; 分母、分子が逆になってる
+
+;; Ex 2.17
+(define (last-pair items)
+  (if (null? (cdr items))
+      items
+      (last-pair (cdr items))))
