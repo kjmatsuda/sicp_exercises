@@ -385,3 +385,13 @@
 (define (square-list-with-map items)
   (map (lambda (x) (* x x))
        items))
+
+;; Ex 2.27
+(define x (list (list 1 2) (list 3 4)))
+
+(define (deep-reverse items)
+  (cond ((not (pair? items))
+	 (list items))
+	(else (append (deep-reverse (cdr items)) 
+		      (deep-reverse (car items))))))
+
