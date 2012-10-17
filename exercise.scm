@@ -336,6 +336,11 @@
 ;; (reverse (list 1 4 9 16 25))
 ;;  => ((((25 . 16) . 9) . 4) . 1) が返ってきて何かおかしい
 
+(define (reverse items)
+  (if (null? (cdr items))
+      items
+      (append (reverse (cdr items)) (list (car items)))))
+
 ;; Ex 2.20
 (define nil '())
 (define (both-even-or-odd x y)
