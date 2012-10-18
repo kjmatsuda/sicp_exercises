@@ -392,6 +392,16 @@
 (define (deep-reverse items)
   (cond ((not (pair? items))
 	 (list items))
-	(else (append (deep-reverse (cdr items)) 
-		      (deep-reverse (car items))))))
+	(else 
+	 (append (deep-reverse (cdr items)) 
+		 (deep-reverse (car items))))))
 
+;; Ex 2.28
+(define (fringe items)
+  (cond ((null? (car items))
+	 items)
+	((not (pair? (car items)))
+	 items)
+	(else 
+	 (append (fringe (list (car items)))
+		 (fringe (cdr items))))))
