@@ -438,3 +438,14 @@
 	     (square-tree sub-tree)
 	     (* sub-tree sub-tree)))
        tree))
+
+;; Ex 2.31
+(define (tree-map proc tree)
+  (cond ((null? tree) nil)
+	((not (pair? tree))
+	 (proc tree))
+	(else (cons (tree-map proc (car tree))
+		      (tree-map proc (cdr tree))))))
+
+(define (square-tree-with-map tree)
+  (tree-map (lambda (x) (* x x)) tree))
