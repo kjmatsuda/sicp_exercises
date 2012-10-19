@@ -399,9 +399,20 @@
 ;; Ex 2.28
 (define (fringe items)
   (cond ((null? (car items))
+	 (display "null のとき：")
+	 (display items)
+	 (newline)
 	 items)
 	((not (pair? (car items)))
+	 (display "ペアでない：")
+	 (display items)
+	 (newline)
 	 items)
 	(else 
-	 (append (fringe (list (car items)))
-		 (fringe (cdr items))))))
+	 (display "ペアのとき：")
+	 (display items)
+	 (newline)
+	 (append 
+	  ;; ここでリストにしてるから常にペアが成立する
+	  (fringe (list (car items))) 
+	  (fringe (cdr items))))))
