@@ -449,3 +449,24 @@
 
 (define (square-tree-with-map tree)
   (tree-map (lambda (x) (* x x)) tree))
+
+;; Ex 2.33
+(define (accumulate op initial sequence)
+  (if (null? sequence)
+      initial
+      (op (car sequence)
+	  (accumulate op initial (cdr sequence)))))
+
+;; sequence が null になるまで展開していく(引数を先に評価するから)
+;; sequence が null になったら、リストの後方から値を蓄積する
+(define (map p sequence)
+  (accumulate (lambda (x y)
+		(cons (p x) y))
+	      '() sequence))
+
+(define (append seq1 seq2)
+  (accumulate cons seq1 seq2))
+;; (append (list 1 2 3 4) (list 5 6 7 8))
+;; を実行すると
+;; (5 6 7 8 1 2 3 4)
+;; になってしまう。後方から cons を始めるため、seq1 の先頭に seq2 を cons した。
