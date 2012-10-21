@@ -470,3 +470,12 @@
 ;; を実行すると
 ;; (5 6 7 8 1 2 3 4)
 ;; になってしまう。後方から cons を始めるため、seq1 の先頭に seq2 を cons した。
+
+;; Ex 2.34
+(define (horner-eval x coefficient-sequence)
+  (accumulate (lambda (this-coeff higher-terms)
+		;; ペアでなかった場合の条件がいりそうだ
+		(* x (+ (* x (car (cdr higher-terms)))
+			this-coeff)))
+	      0
+	      coefficient-sequence))
