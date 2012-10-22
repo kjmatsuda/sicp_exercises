@@ -479,3 +479,13 @@
 			this-coeff)))
 	      0
 	      coefficient-sequence))
+
+;; Ex 2.36
+(define (accumulate-n op init seqs)
+  (if (null? (car seqs))
+      '()
+      (cons 
+       ;; cons と car を組み合わせたものを seqs に適用したい
+       (accumulate op init (accumulate cons '() (map car seqs)))
+       ;; cons と cdr を組み合わせたものを seqs に適用したい
+       (accumulate-n op init (accumulate cons '() (map cdr seqs))))))
