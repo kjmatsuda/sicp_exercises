@@ -486,6 +486,6 @@
       '()
       (cons 
        ;; cons と car を組み合わせたものを seqs に適用したい
-       (accumulate op init (accumulate cons '() (map car seqs)))
+       (accumulate op init (map car seqs))
        ;; cons と cdr を組み合わせたものを seqs に適用したい
-       (accumulate-n op init (accumulate cons '() (map cdr seqs))))))
+       (accumulate-n op init (map cdr seqs)))))
