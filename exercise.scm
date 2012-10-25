@@ -489,3 +489,30 @@
        (accumulate op init (map car seqs))
        ;; cons と cdr を組み合わせたものを seqs に適用したい
        (accumulate-n op init (map cdr seqs)))))
+
+;; Ex 2.37
+(define (dot-product v w)
+  (accumulate + 0 (map * v w)))
+
+(define (matrix-*-vector m v)
+  (map (lambda (w)
+	 (dot-product v w))
+       m))
+;; 実行結果
+;; (matrix-*-vector (list (list 1 2) (list 3 4)) (list 5 6))
+;;  => (17 39)
+
+(define (transpose mat)
+  (accumulate-n cons '() mat))
+;; 実行結果
+;; (transpose (list (list 1 2 3) (list 4 5 6 )))
+;; ((1 4) (2 5) (3 6))
+
+(define (matrix-*-matrix m n)
+  (let ((cols (transpose n)))
+    (map (lambda (v) 
+	   (matrix-*-vector cols v))
+	 m)))
+;; 実行結果
+;; (matrix-*-matrix (list (list 1 2) (list 3 4)) (list (list 5 6) (list 7 8)))
+;; ((19 22) (43 50))
