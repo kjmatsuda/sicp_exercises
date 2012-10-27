@@ -45,11 +45,20 @@
 
 (define (display)
   (define monar (segments->painter segments))
+  (define x-line
+    (let ((v1 (make-vect 0.0 0.0))
+	  (v2 (make-vect 0.0 1.0))
+	  (v3 (make-vect 1.0 0.0))
+	  (v4 (make-vect 1.0 1.0)))
+      (segments->painter
+       (list (make-segment v1 v4)
+	     (make-segment v2 v3)))))
   (gl-clear GL_COLOR_BUFFER_BIT)
   (gl-color 0.0 0.0 0.0)
   (gl-begin GL_LINES)
 ;;  ((corner-split monar 6) frame)
-  ((square-limit monar 4) frame)
+;; ((square-limit monar 4) frame)
+  (x-line frame)
   (gl-end)
   (gl-flush)
   )
