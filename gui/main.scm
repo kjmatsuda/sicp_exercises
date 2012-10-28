@@ -73,6 +73,3 @@
   (gl-vertex (t (x-point p1)) (t (y-point p1)))
   (gl-vertex (t (x-point p2)) (t (y-point p2)))
   )
-
-
-

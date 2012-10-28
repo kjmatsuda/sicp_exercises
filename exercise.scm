@@ -516,3 +516,29 @@
 ;; 実行結果
 ;; (matrix-*-matrix (list (list 1 2) (list 3 4)) (list (list 5 6) (list 7 8)))
 ;; ((19 22) (43 50))
+
+;; Ex 2.46
+(define (make-vect xcord ycord)
+  (cons xcord ycord))
+
+(define (xcor-vect v)
+  (car v))
+
+(define (ycor-vect v)
+  (cdr v))
+
+(define (add-vect v w)
+  (make-vect (+ (xcor-vect v)
+		(xcor-vect w))
+	     (+ (ycor-vect v)
+		(ycor-vect w))))
+
+(define (sub-vect v w)
+  (make-vect (- (xcor-vect v)
+		(xcor-vect w))
+	     (- (ycor-vect v)
+		(ycor-vect w))))
+
+(define (scale-vect s v)
+  (make-vect (* s (xcor-vect v))
+	     (* s (ycor-vect v))))
