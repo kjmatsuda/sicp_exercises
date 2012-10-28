@@ -571,3 +571,13 @@
 
 (define (edge2-frame frame)
   (car (cdr (car (cdr frame)))))
+
+;; Ex 2.48
+(define (make-segment start-seg end-seg)
+  (cons start-seg end-seg))
+
+(define (start-segment line-seg)
+  (car line-seg))
+
+(define (end-segment line-seg)
+  (cdr line-seg))
