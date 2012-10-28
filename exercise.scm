@@ -542,3 +542,32 @@
 (define (scale-vect s v)
   (make-vect (* s (xcor-vect v))
 	     (* s (ycor-vect v))))
+
+;; Ex 2.47
+;; まず1つ目の make-frame に対して
+(define (make-frame origin edge1 edge2)
+  (list origin edge1 edge2))
+
+(define (origin-frame frame)
+  (car frame))
+
+(define (edge1-frame frame)
+  (car (cdr frame)))
+
+(define (edge2-frame frame)
+  (car (cdr (cdr frame))))
+
+(define v0 (make-vect 1 2))
+(define v1 (make-vect 2 4))
+(define v2 (make-vect 4 8))
+(define f (make-frame v0 v1 v2))
+
+;; 次に2つ目の make-frame に対して
+(define (make-frame origin edge1 edge2)
+  (cons origin (cons edge1 edge2)))
+
+(define (edge1-frame frame)
+  (car (car (cdr frame))))
+
+(define (edge2-frame frame)
+  (car (cdr (car (cdr frame)))))
