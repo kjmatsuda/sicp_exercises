@@ -53,12 +53,39 @@
       (segments->painter
        (list (make-segment v1 v4)
 	     (make-segment v2 v3)))))
+  (define outline
+    (segments->painter (list
+			(make-segment (make-vect 0 0)
+				      (make-vect 0 1))
+			(make-segment (make-vect 0 1)
+				      (make-vect 1 1))
+			(make-segment (make-vect 1 1)
+				      (make-vect 1 0))
+			(make-segment (make-vect 1 0)
+				      (make-vect 0 0)))))
+  (define cross
+    (segments->painter (list
+			(make-segment (make-vect 0 0)
+				      (make-vect 1 1))
+			(make-segment (make-vect 0 1)
+				      (make-vect 1 0)))))
+  (define diamond
+    (segments->painter (list
+			(make-segment (make-vect 0 0.5)
+				      (make-vect 0.5 1))
+			(make-segment (make-vect 0.5 1)
+				      (make-vect 1 0.5))
+			(make-segment (make-vect 1 0.5)
+				      (make-vect 0.5 0))
+			(make-segment (make-vect 0.5 0)
+				      (make-vect 0 0.5)))))
   (gl-clear GL_COLOR_BUFFER_BIT)
   (gl-color 0.0 0.0 0.0)
   (gl-begin GL_LINES)
 ;;  ((corner-split monar 6) frame)
 ;; ((square-limit monar 4) frame)
-  (x-line frame)
+;; (x-line frame)
+  (diamond frame)
   (gl-end)
   (gl-flush)
   )
