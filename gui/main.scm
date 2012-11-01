@@ -79,6 +79,13 @@
 				      (make-vect 0.5 0))
 			(make-segment (make-vect 0.5 0)
 				      (make-vect 0 0.5)))))
+
+  (define (rotate90 painter)
+    (transform-painter painter
+		       (make-vect 1.0 0.0)
+		       (make-vect 1.0 1.0)
+		       (make-vect 0.0 0.0)))
+
   (define (flip-horiz painter)
     (transform-painter painter
 		       (make-vect 1.0 0.0)
@@ -96,13 +103,16 @@
 		       (make-vect 0.0 1.0)
 		       (make-vect 0.0 0.0)
 		       (make-vect 1.0 1.0)))
+  (define (below2 painter1 painter2)
+    (rotate90 (beside (rotate270 painter1)
+		      (rotate270 painter2))))
   (gl-clear GL_COLOR_BUFFER_BIT)
   (gl-color 0.0 0.0 0.0)
   (gl-begin GL_LINES)
 ;;  ((corner-split monar 6) frame)
 ;; ((square-limit monar 4) frame)
 ;; (x-line frame)
-  ((rotate180 monar) frame)
+  ((below2 monar cross) frame)
   (gl-end)
   (gl-flush)
   )
