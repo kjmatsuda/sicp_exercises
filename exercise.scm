@@ -652,13 +652,13 @@
 		    (rotate270 painter2))))
 
 ;; Ex 2.54
-(define (equal? items1 items2)
+(define (my-equal? items1 items2)
   (cond ((and (not (pair? items1))
 	      (not (pair? items2)))
 	 (eq? items1 items2))
 	((and (pair? items1)
 	      (pair? items2))
-	 (equal? (car items1) (car items2))
-	 (equal? (cdr items1) (cdr items2)))
+	 (and (equal? (car items1) (car items2))
+	      (equal? (cdr items1) (cdr items2))))
 	(else
 	 #f)))
