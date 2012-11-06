@@ -662,3 +662,42 @@
 	      (equal? (cdr items1) (cdr items2))))
 	(else
 	 #f)))
+
+;; Ex 2.56
+(define (exponentiation? x)
+  (and (pair? x) (eq? (car x) '**)))
+
+(define (make-exponentiation base power)
+  (cond ((=number? base 0) 0)
+	((=number? power 0) 1)
+	((=number? power 1) base)
+	(else (list '** base power))))
+
+(define (base exp)
+  (cadr exp))
+
+(define (power exp)
+  (caddr exp))
+
+(define (deriv exp var)
+  (cond ((number? exp) 0)
+        ((variable? exp)
+         (if (same-variable? exp var) 1 0))
+        ((sum? exp)
+         (make-sum (deriv (addend exp) var)
+                   (deriv (augend exp) var)))
+        ((product? exp)
+         (make-sum
+           (make-product (multiplier exp)
+                         (deriv (multiplicand exp) var))
+           (make-product (deriv (multiplier exp) var)
+                         (multiplicand exp))))
+	;; 次の節を指数用に追加する
+	((exponentiation? exp)
+         (make-product (make-product (power exp)
+				     (make-exponentiation (base exp)
+							  (power exp)))
+		       (deriv (base exp) var)))
+        (else
+         (error "unknown expression type -- DERIV" exp))))
+
