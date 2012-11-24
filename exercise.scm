@@ -773,3 +773,11 @@
 					  result-list)))))
   (copy-to-list tree '()))
 
+;; Ex 2.66
+(define (lookup given-key set-of-records)
+  (cond ((null? set-of-records) #f)
+	((= given-key (entry set-of-records)) #t)
+	((< given-key (entry set-of-records))
+	 (lookup given-key (left-branch set-of-records)))
+	(else ;意図としては (> given-key (entry set-of-records))
+	 (lookup given-key (right-branch set-of-records)))))
