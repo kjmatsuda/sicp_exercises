@@ -843,3 +843,24 @@
 				   (make-leaf 'C 1)))))
 
 (define sample-message '(0 1 1 0 0 1 0 1 0 1 1 1 0))
+
+;; Ex 2.68
+(define (encode message tree)
+  (if (null? message)
+      '()
+      (append (encode-symbol (car message) tree)
+	      (encode (cdr message) tree))))
+
+(define (encode-symbol symbol tree)
+  (cond ((or (null? symbol) 
+	     (not (member symbol (symbols tree))))
+	 (error "symbol is not in tree -- ENCODE-SYMBOL" symbol))
+	((or (null? tree) (leaf? tree))
+	 '()
+	 )
+	((member symbol (symbols (left-branch tree)))
+	 (cons 0 (encode-symbol symbol (left-branch tree))))
+	((member symbol (symbols (right-branch tree)))
+	 (cons 1 (encode-symbol symbol (right-branch tree))))))
+
+(define sample-message-alphabet '(A D A B B C A))
