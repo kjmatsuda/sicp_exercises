@@ -864,3 +864,17 @@
 	 (cons 1 (encode-symbol symbol (right-branch tree))))))
 
 (define sample-message-alphabet '(A D A B B C A))
+
+;; Ex 2.69
+(define (generate-haffman-tree pairs)
+  (successive-merge (make-leaf-set pairs)))
+
+(define (successive-merge set)
+  (cond ((null? set) '())
+	((null? (cdr set)) set)
+	(else
+	 (adjoin-set (make-code-tree (car set) (cadr set))
+		     ; これではマージする順がおかしくなりそう
+		     (successive-merge (cddr set))))))
+
+(define sample-pairs '((A 4) (B 2) (C 1) (D 1)))
