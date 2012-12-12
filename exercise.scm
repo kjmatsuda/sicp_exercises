@@ -894,3 +894,18 @@
   (successive-merge-1 set '()))
 
 (define sample-pairs '((A 4) (B 2) (C 1) (D 1)))
+
+;; Ex 2.70
+(define symbols-of-rock-songs 
+  '((NA 16) (YIP 9) (SHA 3) (A 2) (GET 2) (JOB 2) (BOOM 1) (WAH 1)))
+
+(define rock-lyrics
+  '(GET A JOB
+	SHA NA NA NA NA NA NA NA NA
+	GET A JOB
+	SHA NA NA NA NA NA NA NA NA
+	WAH YIP YIP YIP YIP YIP YIP YIP YIP YIP
+	SHA BOOM))
+(encode 
+ rock-lyrics
+ (generate-haffman-tree symbols-of-rock-songs))
