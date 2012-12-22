@@ -1070,6 +1070,22 @@
 ;; Ben, Alyssa の方法を共存させるための方法
 ;; 方法2：表を使った方法
 
+;; get put の実装
+;; 引用元  http://d.hatena.ne.jp/higepon/20060503/1146317558
+(define op-table (make-hash-table))
+
+(define (put op type item)
+    (if (not (hash-table-exists? op-table op))
+        (hash-table-put! op-table op (make-hash-table)))
+    (let ((type-table (hash-table-get op-table op)))
+      (hash-table-put! type-table type item)))
+
+(define (get op type)
+    (if (not (hash-table-exists? op-table op))
+        (hash-table-put! op-table op (make-hash-table)))
+    (let ((type-table (hash-table-get op-table op)))
+      (hash-table-get type-table type)))
+
 ;; Ben の方法(直交座標)
 (define (install-rectangular-package)
   ;; internal procedures
