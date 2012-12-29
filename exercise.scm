@@ -1086,6 +1086,37 @@
     (let ((type-table (hash-table-get op-table op)))
       (hash-table-get type-table type)))
 
+;; Ex 2.77 でのエラー解消のために別バージョンの get, put を引用
+;; こちらではエラーが出なかった
+;; 引用元  http://d.hatena.ne.jp/awacio/20100918/1284827384
+;パッケージのシステムを管理するテーブルを生成
+(define package-table (make-hash-table 'equal?))
+
+;手続きを入れ込む手続き
+(define (put operation-symbol type-symbol operation)
+  (let ((operations-table (hash-table-get package-table type-symbol #f)))
+    (if (equal? #f operations-table)
+	;typeが存在しなかった場合は作成しちゃう。
+	(let ((tmp (make-hash-table)))
+	  (hash-table-put! tmp
+			   operation-symbol
+			   operation)
+	  (hash-table-put! package-table
+			   type-symbol
+			   tmp))
+	;存在した場合はそのテーブルに対して該当する key-value エントリを生成 or 更新
+	(hash-table-put! operations-table
+			 operation-symbol
+			 operation))))
+
+;手続きを取り出す手続き
+(define (get operation-symbol type-symbol)
+  (let ((operations-table (hash-table-get package-table type-symbol #f)))
+    (if (equal? #f operations-table)
+	#f
+	(hash-table-get operations-table
+			operation-symbol
+			#f))))
 ;; Ben の方法(直交座標)
 (define (install-rectangular-package)
   ;; internal procedures
@@ -1300,11 +1331,3 @@
 (trace get)
 (trace apply-generic)
 (trace type-tag)
-
-なぜか以下のエラーが出てしまう
-gosh> (magnitude z1)
-           CALL magnitude (complex rectangular 3 . 4)
-            CALL apply-generic magnitude (complex rectangular 3 . 4)
-             CALL type-tag (complex rectangular 3 . 4)
-             RETN type-tag complex
-*** ERROR: #<hash-table eq? 0x913c730> doesn't have an entry for key (complex)
