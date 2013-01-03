@@ -47,4 +47,11 @@
 (test* "raise"
        (make-complex-from-real-imag 0 0)
        (raise real3))
+
+(test-section "raise from integer(bottom) to complex(top)")
+(define i1
+  (make-scheme-number 3))
+(test* "raise"
+       (make-complex-from-real-imag 3 0)
+       (raise (raise (raise i1))))
 (test-end)
