@@ -1,0 +1,27 @@
+;; 実数算術演算パッケージ
+(define (install-real-package)
+  (define (tag x)
+    (attach-tag 'real x))
+  (define (raise x)
+    (make-complex-from-real-imag x 0))
+  (put 'add '(real real)
+       (lambda (x y) (tag (+ x y))))
+  (put 'sub '(real real)
+       (lambda (x y) (tag (- x y))))
+  (put 'mul '(real real)
+       (lambda (x y) (tag (* x y))))
+  (put 'div '(real real)
+       (lambda (x y) (tag (/ x y))))
+  (put 'equ? '(real real)
+       (lambda (x y) (= x y)))
+  (put '=zero? '(real) 
+       (lambda (x) (= x 0)))
+  (put 'make 'real
+       (lambda (x) (tag x)))
+  (put 'raise '(real) raise)
+  'done)
+
+(define (make-real n)
+  ((get 'make 'real) n))
+
+(install-real-package)
