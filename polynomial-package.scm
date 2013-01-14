@@ -67,7 +67,7 @@
 	(cons term term-list)))
   (define (the-empty-termlist) '())
   (define (first-term term-list) (car term-list))
-  (define (rest-term term-list) (cdr term-list))
+  (define (rest-terms term-list) (cdr term-list))
   (define (empty-termlist? term-list) (null? term-list))
 
   (define (make-term order coeff) (list order coeff))
@@ -81,9 +81,12 @@
        (lambda (p1 p2) (tag (mul-poly p1 p2))))
   (put 'make 'polynomial
        (lambda (var terms) (tag (make-poly var terms))))
+  (put '=zero? '(polynomial) =polynomial-zero?)  
   'done)
+
 
 ;; コンストラクタを公開
 (define (make-polynomial var terms)
   ((get 'make 'polynomial) var terms))
 
+(install-polynomial-package)
