@@ -59,7 +59,12 @@
 	   (make-term (+ (order t1) (order t2))
 		      (mul (coeff t1) (coeff t2)))
 	   (mul-term-by-all-terms t1 (rest-terms L))))))
-
+  (define (=zero-term? L)
+    (or (empty-termlist? L)
+        (and (=zero? (coeff (first-term L)))
+             (=zero-term? (rest-terms L)))))
+  (define (=polynomial-zero? p)
+    (=zero-term? (term-list p)))
   ;; representation of terms and term lists (p. 209)
   (define (adjoin-term term term-list)
     (if (= zero? (coeff term))
