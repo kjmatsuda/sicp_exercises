@@ -10,6 +10,9 @@
 
 (define w (append! x y))
 (test-section "response after append!")
+;; append! 内の (set-cdr! (last-pair x) y) で
+;; x の cdr 部が y に置き換わると思ったけど
+;; 後ろに付け足されるということかな
 (test* "(cdr x)"
-       (cdr x) (list 'c 'd))
+       (cdr x) (list 'b 'c 'd))
 (test-end)
