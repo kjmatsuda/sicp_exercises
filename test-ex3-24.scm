@@ -4,7 +4,7 @@
 
 (define table1 (make-table equal?))
 (test-section "insert, and lookup")
-(test* "lookup, before insert)"
+(test* "lookup, before insert"
        ((table1 'lookup-proc) 'animal 'cat)
        #f)
 ((table1 'insert-proc) 'animal 'cat 'myaa)

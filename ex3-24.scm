@@ -1,27 +1,28 @@
-(define (assoc key records same-key?)
-  (define equal-test '())
-  ;; same-key? が null のときは equal? を使うみたいな感じかな
-  (if (null? same-key?)
-      (set! equal-test equal?)
-      (set! equal-test same-key?))
+(define (assoc key records)
   (cond ((null? records) #f)
-	((equal-test key (caar records)) (car records))
-	(else (assoc key (cdr records) same-key?))))
+	((equal? key (caar records)) (car records))
+	(else (assoc key (cdr records)))))
 
+;; http://d.hatena.ne.jp/bowmoq/20090605/1244156961
+;; 「いらずんば」から引用
 (define (make-table same-key?)
+  (define (my-assoc key records) ;; 比較をする述語を指定する
+    (cond ((null? records) #f)
+          ((same-key? key (caar records)) (car records))
+          (else (assoc key (cdr records)))))
   (let ((local-table (list '*table*)))
     (define (lookup key-1 key-2)
-      (let ((subtable (assoc key-1 (cdr local-table) same-key?)))
+      (let ((subtable (my-assoc key-1 (cdr local-table))))
 	(if subtable
-	    (let ((record (assoc key-2 (cdr subtable) same-key?)))
+	    (let ((record (my-assoc key-2 (cdr subtable))))
 	      (if record
 		  (cdr record)
 		  #f))
 	    #f)))
     (define (insert! key-1 key-2 value)
-      (let ((subtable (assoc key-1 (cdr local-table) same-key?)))
+      (let ((subtable (my-assoc key-1 (cdr local-table))))
 	(if subtable
-	    (let ((record (assoc key-2 (cdr subtable) same-key?)))
+	    (let ((record (my-assoc key-2 (cdr subtable))))
 	      (if record
 		  (set-cdr! record value)
 		  (set-cdr! subtable
