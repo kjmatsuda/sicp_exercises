@@ -1,0 +1,515 @@
+!_TAG_FILE_ENCODING	utf-8	//
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_JP_AUTHOR	HIGASHI Hirohito	/Twitter: @h_east/
+!_TAG_PROGRAM_JP_URL	http://hp.vector.co.jp/authors/VA025040/	//
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8J2	//
+=zero?	arithmetic-core.scm	/^(define (=zero? x)$/;"	kind:function	line:75	language:Scheme
+W1	chapter3.scm	/^(define W1 (make-withdraw 100))$/;"	kind:function	line:25	language:Scheme
+W2	chapter3.scm	/^(define W2 (make-withdraw 100))$/;"	kind:function	line:26	language:Scheme
+acc	chapter3.scm	/^(define acc (make-account 100))$/;"	kind:function	line:44	language:Scheme
+acc	test-ex3-3.scm	/^(define acc (make-account 100 'secret-password))$/;"	kind:function	line:6	language:Scheme
+acc	test-ex3-4.scm	/^(define acc (make-account 100 'secret-password))$/;"	kind:function	line:6	language:Scheme
+accumulate	exercise.scm	/^(define (accumulate combiner null-value term a next b)$/;"	kind:function	line:180	language:Scheme
+accumulate	exercise.scm	/^(define (accumulate combiner null-value term a next b)$/;"	kind:function	line:193	language:Scheme
+accumulate	exercise.scm	/^(define (accumulate op initial sequence)$/;"	kind:function	line:454	language:Scheme
+accumulate-n	exercise.scm	/^(define (accumulate-n op init seqs)$/;"	kind:function	line:484	language:Scheme
+add	arithmetic-core.scm	/^(define (add x y) (apply-generic 'add x y))$/;"	kind:function	line:67	language:Scheme
+add	common.scm	/^(define (add x y) (apply-generic 'add x y))$/;"	kind:function	line:70	language:Scheme
+add	exercise.scm	/^(define (add x y) (apply-generic 'add x y))$/;"	kind:function	line:1205	language:Scheme
+add-complex	exercise.scm	/^(define (add-complex z1 z2)$/;"	kind:function	line:915	language:Scheme
+add-vect	exercise.scm	/^(define (add-vect v w)$/;"	kind:function	line:530	language:Scheme
+add-vect	gui/vector.scm	/^(define (add-vect v1 v2)$/;"	kind:function	line:11	language:Scheme
+adjoin-set	exercise.scm	/^(define (adjoin-set x set)$/;"	kind:function	line:721	language:Scheme
+adjoin-set	exercise.scm	/^(define (adjoin-set x set)$/;"	kind:function	line:837	language:Scheme
+angle	arithmetic-core.scm	/^(define (angle z) (apply-generic 'angle z))$/;"	kind:function	line:60	language:Scheme
+angle	common.scm	/^(define (angle z) (apply-generic 'angle z))$/;"	kind:function	line:63	language:Scheme
+angle	exercise.scm	/^(define (angle z) (apply-generic 'angle z))$/;"	kind:function	line:1185	language:Scheme
+angle	exercise.scm	/^(define (angle z) (cdr z))$/;"	kind:function	line:962	language:Scheme
+angle	exercise.scm	/^(define (angle z)$/;"	kind:function	line:1056	language:Scheme
+angle	exercise.scm	/^(define (angle z)$/;"	kind:function	line:941	language:Scheme
+angle-polar	exercise.scm	/^(define (angle-polar z) (cdr z))$/;"	kind:function	line:1023	language:Scheme
+angle-rectangular	exercise.scm	/^(define (angle-rectangular z)$/;"	kind:function	line:1001	language:Scheme
+append	ex3-12.scm	/^(define (append x y)$/;"	kind:function	line:1	language:Scheme
+append	exercise.scm	/^(define (append seq1 seq2)$/;"	kind:function	line:467	language:Scheme
+append!	ex3-12.scm	/^(define (append! x y)$/;"	kind:function	line:6	language:Scheme
+apply-generic	arithmetic-core.scm	/^(define (apply-generic op . args)$/;"	kind:function	line:48	language:Scheme
+apply-generic	common.scm	/^(define (apply-generic op . args)$/;"	kind:function	line:51	language:Scheme
+apply-generic	ex2-84.scm	/^(define (apply-generic op . args)$/;"	kind:function	line:14	language:Scheme
+apply-generic	ex2-85.scm	/^(define (apply-generic op . args)$/;"	kind:function	line:49	language:Scheme
+apply-generic	exercise.scm	/^(define (apply-generic op . args)$/;"	kind:function	line:1173	language:Scheme
+approximate-pi	exercise.scm	/^(define (approximate-pi n)$/;"	kind:function	line:162	language:Scheme
+assoc	ex3-24.scm	/^(define (assoc key records)$/;"	kind:function	line:1	language:Scheme
+assoc	ex3-25.scm	/^(define (assoc key records)$/;"	kind:function	line:2	language:Scheme
+assoc	table-util-local.scm	/^(define (assoc key records)$/;"	kind:function	line:1	language:Scheme
+assoc	table-util.scm	/^(define (assoc key records)$/;"	kind:function	line:1	language:Scheme
+attach-tag	arithmetic-core.scm	/^(define (attach-tag type-tag contents)$/;"	kind:function	line:1	language:Scheme
+attach-tag	common.scm	/^(define (attach-tag type-tag contents)$/;"	kind:function	line:4	language:Scheme
+attach-tag	exercise.scm	/^(define (attach-tag type-tag contents)$/;"	kind:function	line:973	language:Scheme
+average	exercise.scm	/^(define (average a b)$/;"	kind:function	line:295	language:Scheme
+balance	chapter3.scm	/^(define balance 100)$/;"	kind:function	line:2	language:Scheme
+base	exercise.scm	/^(define (base exp)$/;"	kind:function	line:676	language:Scheme
+below	exercise.scm	/^(define (below painter1 painter2)$/;"	kind:function	line:634	language:Scheme
+below	exercise.scm	/^(define (below painter1 painter2)$/;"	kind:function	line:650	language:Scheme
+below	gui/painter.scm	/^(define (below painter1 painter2)$/;"	kind:function	line:89	language:Scheme
+beside	gui/painter.scm	/^(define (beside painter1 painter2)$/;"	kind:function	line:44	language:Scheme
+both-even-or-odd	exercise.scm	/^(define (both-even-or-odd x y)$/;"	kind:function	line:346	language:Scheme
+c	ex2-85.scm	/^(define c (make-complex-from-real-imag 1 3))/;"	kind:function	line:300	language:Scheme
+center	ex3-5.scm	/^(define (center circle)$/;"	kind:function	line:43	language:Scheme
+choose-branch	exercise.scm	/^(define (choose-branch bit branch)$/;"	kind:function	line:832	language:Scheme
+circle-test	ex3-5.scm	/^(define (circle-test circle)$/;"	kind:function	line:81	language:Scheme
+coerce-higher-type	ex2-85.scm	/^(define (coerce-higher-type items)$/;"	kind:function	line:37	language:Scheme
+compose	exercise.scm	/^(define (compose f g)$/;"	kind:function	line:238	language:Scheme
+contents	arithmetic-core.scm	/^(define (contents datum)$/;"	kind:function	line:9	language:Scheme
+contents	common.scm	/^(define (contents datum)$/;"	kind:function	line:12	language:Scheme
+contents	exercise.scm	/^(define (contents datum)$/;"	kind:function	line:981	language:Scheme
+corner-split	gui/painter.scm	/^(define (corner-split painter n)$/;"	kind:function	line:60	language:Scheme
+count-pairs	ex3-16.scm	/^(define (count-pairs x)$/;"	kind:function	line:1	language:Scheme
+count-pairs	ex3-17.scm	/^(define (count-pairs x)$/;"	kind:function	line:1	language:Scheme
+cross	exercise.scm	/^(define cross$/;"	kind:function	line:597	language:Scheme
+cube-root	exercise.scm	/^(define (cube-root x)$/;"	kind:function	line:24	language:Scheme
+cube-root-iter	exercise.scm	/^(define (cube-root-iter guess x)$/;"	kind:function	line:13	language:Scheme
+decode	exercise.scm	/^(define (decode bits tree)$/;"	kind:function	line:820	language:Scheme
+deep-reverse	exercise.scm	/^(define (deep-reverse items)$/;"	kind:function	line:392	language:Scheme
+delete-queue!	queue-util.scm	/^(define (delete-queue! queue)$/;"	kind:function	line:35	language:Scheme
+deriv	exercise.scm	/^(define (deriv exp var)$/;"	kind:function	line:682	language:Scheme
+diamond	exercise.scm	/^(define diamond$/;"	kind:function	line:604	language:Scheme
+display	gui/main.scm	/^(define (display)$/;"	kind:function	line:46	language:Scheme
+display-queue	ex3-23.scm	/^(define (display-queue queue)$/;"	kind:function	line:73	language:Scheme
+div	arithmetic-core.scm	/^(define (div x y) (apply-generic 'div x y))$/;"	kind:function	line:70	language:Scheme
+div	common.scm	/^(define (div x y) (apply-generic 'div x y))$/;"	kind:function	line:73	language:Scheme
+div	exercise.scm	/^(define (div x y) (apply-generic 'div x y))$/;"	kind:function	line:1208	language:Scheme
+div-complex	exercise.scm	/^(define (div-complex z1 z2)$/;"	kind:function	line:927	language:Scheme
+divides?	exercise.scm	/^(define (divides? a b)$/;"	kind:function	line:87	language:Scheme
+dot-product	exercise.scm	/^(define (dot-product v w)$/;"	kind:function	line:494	language:Scheme
+double	exercise.scm	/^(define (double func)$/;"	kind:function	line:234	language:Scheme
+draw-line	gui/main.scm	/^(define (draw-line p1 p2)$/;"	kind:function	line:124	language:Scheme
+drop	ex2-85.scm	/^(define (drop x)$/;"	kind:function	line:7	language:Scheme
+edge1-frame	exercise.scm	/^(define (edge1-frame frame)$/;"	kind:function	line:554	language:Scheme
+edge1-frame	exercise.scm	/^(define (edge1-frame frame)$/;"	kind:function	line:569	language:Scheme
+edge1-frame	gui/frame.scm	/^(define (edge1-frame frame)$/;"	kind:function	line:8	language:Scheme
+edge2-frame	exercise.scm	/^(define (edge2-frame frame)$/;"	kind:function	line:557	language:Scheme
+edge2-frame	exercise.scm	/^(define (edge2-frame frame)$/;"	kind:function	line:572	language:Scheme
+edge2-frame	gui/frame.scm	/^(define (edge2-frame frame)$/;"	kind:function	line:11	language:Scheme
+element-of-set?	exercise.scm	/^(define (element-of-set? x set)$/;"	kind:function	line:705	language:Scheme
+empty-queue?	ex3-23.scm	/^(define (empty-queue? queue) (null? (front-ptr queue)))$/;"	kind:function	line:5	language:Scheme
+empty-queue?	queue-util.scm	/^(define (empty-queue? queue)$/;"	kind:function	line:13	language:Scheme
+encode	exercise.scm	/^(define (encode message tree)$/;"	kind:function	line:861	language:Scheme
+encode-symbol	exercise.scm	/^(define (encode-symbol symbol tree)$/;"	kind:function	line:867	language:Scheme
+end-segment	exercise.scm	/^(define (end-segment line-seg)$/;"	kind:function	line:582	language:Scheme
+end-segment	exercise.scm	/^(define (end-segment segment)$/;"	kind:function	line:274	language:Scheme
+end-segment	gui/segment.scm	/^(define (end-segment s)$/;"	kind:function	line:26	language:Scheme
+entry	exercise.scm	/^(define (entry tree)$/;"	kind:function	line:747	language:Scheme
+equ?	arithmetic-core.scm	/^(define (equ? x y)$/;"	kind:function	line:72	language:Scheme
+equ?	common.scm	/^(define (equ? x y)$/;"	kind:function	line:75	language:Scheme
+equ?	ex2-79.scm	/^(define (equ? x y)$/;"	kind:function	line:5	language:Scheme
+estimate-integral	ex3-5.scm	/^(define (estimate-integral circle trials)$/;"	kind:function	line:77	language:Scheme
+exponentiation?	exercise.scm	/^(define (exponentiation? x)$/;"	kind:function	line:667	language:Scheme
+f	ex3-8.scm	/^(define (f x)$/;"	kind:function	line:4	language:Scheme
+f	exercise.scm	/^(define (f g)$/;"	kind:function	line:201	language:Scheme
+f	exercise.scm	/^(define f (make-frame v0 v1 v2))$/;"	kind:function	line:563	language:Scheme
+factorial	exercise.scm	/^(define (factorial n)$/;"	kind:function	line:149	language:Scheme
+fib	exercise.scm	/^(define (fib n)$/;"	kind:function	line:37	language:Scheme
+fib-iter	exercise.scm	/^(define (fib-iter a b p q count)$/;"	kind:function	line:40	language:Scheme
+find-divisor	exercise.scm	/^(define (find-divisor n test-devisor)$/;"	kind:function	line:123	language:Scheme
+find-divisor	exercise.scm	/^(define (find-divisor n test-devisor)$/;"	kind:function	line:82	language:Scheme
+first-accumulator	test-ex3-1.scm	/^(define first-accumulator (make-accumulator 10))$/;"	kind:function	line:6	language:Scheme
+fixed-point-print-process	exercise.scm	/^(define (fixed-point-print-process f first-guess)$/;"	kind:function	line:207	language:Scheme
+flip-horiz	exercise.scm	/^(define (flip-horiz painter)$/;"	kind:function	line:615	language:Scheme
+flip-horiz	gui/painter.scm	/^(define (flip-horiz painter)$/;"	kind:function	line:92	language:Scheme
+flip-vert	gui/painter.scm	/^(define (flip-vert painter)$/;"	kind:function	line:19	language:Scheme
+frame	gui/main.scm	/^(define frame (make-frame (make-vect 0 0) (make-vect 1 0) (make-vect 0 1)))$/;"	kind:function	line:20	language:Scheme
+frame-coord-map	gui/frame.scm	/^(define (frame-coord-map frame)$/;"	kind:function	line:14	language:Scheme
+fringe	exercise.scm	/^(define (fringe items)$/;"	kind:function	line:400	language:Scheme
+front-delete-queue!	ex3-23.scm	/^(define (front-delete-queue! queue)$/;"	kind:function	line:59	language:Scheme
+front-insert-queue!	ex3-23.scm	/^(define (front-insert-queue! queue value)$/;"	kind:function	line:48	language:Scheme
+front-ptr	ex3-23.scm	/^(define (front-ptr queue) (car queue))$/;"	kind:function	line:1	language:Scheme
+front-ptr	queue-util.scm	/^(define (front-ptr queue)$/;"	kind:function	line:1	language:Scheme
+front-queue	ex3-23.scm	/^(define (front-queue queue)$/;"	kind:function	line:26	language:Scheme
+front-queue	queue-util.scm	/^(define (front-queue queue)$/;"	kind:function	line:19	language:Scheme
+generate-haffman-tree	exercise.scm	/^(define (generate-haffman-tree pairs)$/;"	kind:function	line:882	language:Scheme
+get	arithmetic-core.scm	/^(define (get operation-symbol type-symbol)$/;"	kind:function	line:40	language:Scheme
+get	common.scm	/^(define (get operation-symbol type-symbol)$/;"	kind:function	line:43	language:Scheme
+get	exercise.scm	/^(define (get op type)$/;"	kind:function	line:1083	language:Scheme
+get	exercise.scm	/^(define (get operation-symbol type-symbol)$/;"	kind:function	line:1113	language:Scheme
+good-enough?	exercise.scm	/^(define (good-enough? guess x)$/;"	kind:function	line:10	language:Scheme
+higher-type	ex2-85.scm	/^(define (higher-type x y)$/;"	kind:function	line:28	language:Scheme
+horner-eval	exercise.scm	/^(define (horner-eval x coefficient-sequence)$/;"	kind:function	line:475	language:Scheme
+i	ex2-85.scm	/^(define i (make-scheme-number 2))$/;"	kind:function	line:297	language:Scheme
+i1	test-ex2-83.scm	/^(define i1$/;"	kind:function	line:52	language:Scheme
+imag-part	arithmetic-core.scm	/^(define (imag-part z) (apply-generic 'imag-part z))$/;"	kind:function	line:58	language:Scheme
+imag-part	common.scm	/^(define (imag-part z) (apply-generic 'imag-part z))$/;"	kind:function	line:61	language:Scheme
+imag-part	exercise.scm	/^(define (imag-part z) (apply-generic 'imag-part z))$/;"	kind:function	line:1183	language:Scheme
+imag-part	exercise.scm	/^(define (imag-part z) (cdr z))$/;"	kind:function	line:935	language:Scheme
+imag-part	exercise.scm	/^(define (imag-part z)$/;"	kind:function	line:1042	language:Scheme
+imag-part	exercise.scm	/^(define (imag-part z)$/;"	kind:function	line:957	language:Scheme
+imag-part-polar	exercise.scm	/^(define (imag-part-polar z)$/;"	kind:function	line:1018	language:Scheme
+imag-part-rectangular	exercise.scm	/^(define (imag-part-rectangular z) (cdr z))$/;"	kind:function	line:995	language:Scheme
+improve	exercise.scm	/^(define (improve guess x)$/;"	kind:function	line:19	language:Scheme
+inc	exercise.scm	/^(define (inc x)$/;"	kind:function	line:229	language:Scheme
+init	gui/main.scm	/^(define (init)$/;"	kind:function	line:120	language:Scheme
+insert!	table-util.scm	/^(define (insert! key-1 key-2 value table)$/;"	kind:function	line:15	language:Scheme
+insert!	test-ex3-25.scm	/^(define insert! (table1 'insert-proc!))$/;"	kind:function	line:7	language:Scheme
+insert-queue!	queue-util.scm	/^(define (insert-queue! queue item)$/;"	kind:function	line:24	language:Scheme
+install-complex-package	complex-package.scm	/^(define (install-complex-package)$/;"	kind:function	line:2	language:Scheme
+install-complex-package	ex2-79.scm	/^(define (install-complex-package)$/;"	kind:function	line:137	language:Scheme
+install-complex-package	ex2-83.scm	/^(define (install-complex-package)$/;"	kind:function	line:170	language:Scheme
+install-complex-package	ex2-84.scm	/^(define (install-complex-package)$/;"	kind:function	line:227	language:Scheme
+install-complex-package	ex2-85.scm	/^(define (install-complex-package)$/;"	kind:function	line:240	language:Scheme
+install-complex-package	exercise.scm	/^(define (install-complex-package)$/;"	kind:function	line:1271	language:Scheme
+install-polar-package	ex2-79.scm	/^(define (install-polar-package)$/;"	kind:function	line:107	language:Scheme
+install-polar-package	ex2-83.scm	/^(define (install-polar-package)$/;"	kind:function	line:140	language:Scheme
+install-polar-package	ex2-84.scm	/^(define (install-polar-package)$/;"	kind:function	line:197	language:Scheme
+install-polar-package	ex2-85.scm	/^(define (install-polar-package)$/;"	kind:function	line:210	language:Scheme
+install-polar-package	exercise.scm	/^(define (install-polar-package)$/;"	kind:function	line:1147	language:Scheme
+install-polar-package	polar-package.scm	/^(define (install-polar-package)$/;"	kind:function	line:2	language:Scheme
+install-polynomial-package	polynomial-package.scm	/^(define (install-polynomial-package)$/;"	kind:function	line:2	language:Scheme
+install-rational-package	ex2-79.scm	/^(define (install-rational-package)$/;"	kind:function	line:31	language:Scheme
+install-rational-package	ex2-83.scm	/^(define (install-rational-package)$/;"	kind:function	line:35	language:Scheme
+install-rational-package	ex2-84.scm	/^(define (install-rational-package)$/;"	kind:function	line:79	language:Scheme
+install-rational-package	ex2-85.scm	/^(define (install-rational-package)$/;"	kind:function	line:99	language:Scheme
+install-rational-package	exercise.scm	/^(define (install-rational-package)$/;"	kind:function	line:1230	language:Scheme
+install-rational-package	rational-package.scm	/^(define (install-rational-package)$/;"	kind:function	line:2	language:Scheme
+install-real-package	ex2-83.scm	/^(define (install-real-package)$/;"	kind:function	line:85	language:Scheme
+install-real-package	ex2-84.scm	/^(define (install-real-package)$/;"	kind:function	line:134	language:Scheme
+install-real-package	ex2-85.scm	/^(define (install-real-package)$/;"	kind:function	line:150	language:Scheme
+install-real-package	real-package.scm	/^(define (install-real-package)$/;"	kind:function	line:2	language:Scheme
+install-rectangular-package	ex2-79.scm	/^(define (install-rectangular-package)$/;"	kind:function	line:78	language:Scheme
+install-rectangular-package	ex2-83.scm	/^(define (install-rectangular-package)$/;"	kind:function	line:111	language:Scheme
+install-rectangular-package	ex2-84.scm	/^(define (install-rectangular-package)$/;"	kind:function	line:168	language:Scheme
+install-rectangular-package	ex2-85.scm	/^(define (install-rectangular-package)$/;"	kind:function	line:181	language:Scheme
+install-rectangular-package	exercise.scm	/^(define (install-rectangular-package)$/;"	kind:function	line:1121	language:Scheme
+install-rectangular-package	rectangular-package.scm	/^(define (install-rectangular-package)$/;"	kind:function	line:2	language:Scheme
+install-scheme-number-package	ex2-79.scm	/^(define (install-scheme-number-package)$/;"	kind:function	line:9	language:Scheme
+install-scheme-number-package	ex2-83.scm	/^(define (install-scheme-number-package)$/;"	kind:function	line:9	language:Scheme
+install-scheme-number-package	ex2-84.scm	/^(define (install-scheme-number-package)$/;"	kind:function	line:45	language:Scheme
+install-scheme-number-package	ex2-85.scm	/^(define (install-scheme-number-package)$/;"	kind:function	line:74	language:Scheme
+install-scheme-number-package	exercise.scm	/^(define (install-scheme-number-package)$/;"	kind:function	line:1211	language:Scheme
+install-scheme-number-package	scheme-number-package.scm	/^(define (install-scheme-number-package)$/;"	kind:function	line:2	language:Scheme
+last	ex2-85.scm	/^(define (last lst)$/;"	kind:function	line:23	language:Scheme
+last-pair	ex3-12.scm	/^(define (last-pair x)$/;"	kind:function	line:10	language:Scheme
+last-pair	exercise.scm	/^(define (last-pair items)$/;"	kind:function	line:326	language:Scheme
+leaf?	exercise.scm	/^(define (leaf? object)$/;"	kind:function	line:789	language:Scheme
+left-branch	exercise.scm	/^(define (left-branch tree)$/;"	kind:function	line:750	language:Scheme
+left-branch	exercise.scm	/^(define (left-branch tree)$/;"	kind:function	line:804	language:Scheme
+lookup	exercise.scm	/^(define (lookup given-key set-of-records)$/;"	kind:function	line:777	language:Scheme
+lookup	table-util.scm	/^(define (lookup key-1 key-2 table)$/;"	kind:function	line:6	language:Scheme
+lookup	test-ex3-25.scm	/^(define lookup (table1 'lookup-proc))$/;"	kind:function	line:6	language:Scheme
+lower-bound	exercise.scm	/^(define (lower-bound interval)$/;"	kind:function	line:307	language:Scheme
+lower-x-coordinate	ex3-5.scm	/^(define (lower-x-coordinate circle)$/;"	kind:function	line:57	language:Scheme
+lower-y-coordinate	ex3-5.scm	/^(define (lower-y-coordinate circle)$/;"	kind:function	line:61	language:Scheme
+magnitude	arithmetic-core.scm	/^(define (magnitude z) (apply-generic 'magnitude z))$/;"	kind:function	line:59	language:Scheme
+magnitude	common.scm	/^(define (magnitude z) (apply-generic 'magnitude z))$/;"	kind:function	line:62	language:Scheme
+magnitude	exercise.scm	/^(define (magnitude z) (apply-generic 'magnitude z))$/;"	kind:function	line:1184	language:Scheme
+magnitude	exercise.scm	/^(define (magnitude z) (car z))$/;"	kind:function	line:960	language:Scheme
+magnitude	exercise.scm	/^(define (magnitude z)$/;"	kind:function	line:1049	language:Scheme
+magnitude	exercise.scm	/^(define (magnitude z)$/;"	kind:function	line:937	language:Scheme
+magnitude-polar	exercise.scm	/^(define (magnitude-polar z) (car z))$/;"	kind:function	line:1021	language:Scheme
+magnitude-rectangular	exercise.scm	/^(define (magnitude-rectangular z)$/;"	kind:function	line:997	language:Scheme
+main	gui/main.scm	/^(define (main args)$/;"	kind:function	line:36	language:Scheme
+make-account	chapter3.scm	/^(define (make-account balance)$/;"	kind:function	line:28	language:Scheme
+make-account	ex3-3.scm	/^(define (make-account balance secret-password)$/;"	kind:function	line:1	language:Scheme
+make-account	ex3-4.scm	/^(define (make-account balance secret-password)$/;"	kind:function	line:1	language:Scheme
+make-accumulator	ex3-1.scm	/^(define (make-accumulator sum)$/;"	kind:function	line:1	language:Scheme
+make-center-percent	exercise.scm	/^(define (make-center-percent c percent)$/;"	kind:function	line:316	language:Scheme
+make-circle	ex3-5.scm	/^(define (make-circle center radius)$/;"	kind:function	line:40	language:Scheme
+make-code-tree	exercise.scm	/^(define (make-code-tree left right)$/;"	kind:function	line:798	language:Scheme
+make-complex-from-mag-ang	complex-package.scm	/^(define (make-complex-from-mag-ang r a)$/;"	kind:function	line:48	language:Scheme
+make-complex-from-mag-ang	ex2-79.scm	/^(define (make-complex-from-mag-ang r a)$/;"	kind:function	line:181	language:Scheme
+make-complex-from-mag-ang	ex2-83.scm	/^(define (make-complex-from-mag-ang r a)$/;"	kind:function	line:214	language:Scheme
+make-complex-from-mag-ang	ex2-84.scm	/^(define (make-complex-from-mag-ang r a)$/;"	kind:function	line:272	language:Scheme
+make-complex-from-mag-ang	ex2-85.scm	/^(define (make-complex-from-mag-ang r a)$/;"	kind:function	line:288	language:Scheme
+make-complex-from-real-imag	complex-package.scm	/^(define (make-complex-from-real-imag x y)$/;"	kind:function	line:45	language:Scheme
+make-complex-from-real-imag	ex2-79.scm	/^(define (make-complex-from-real-imag x y)$/;"	kind:function	line:178	language:Scheme
+make-complex-from-real-imag	ex2-83.scm	/^(define (make-complex-from-real-imag x y)$/;"	kind:function	line:211	language:Scheme
+make-complex-from-real-imag	ex2-84.scm	/^(define (make-complex-from-real-imag x y)$/;"	kind:function	line:269	language:Scheme
+make-complex-from-real-imag	ex2-85.scm	/^(define (make-complex-from-real-imag x y)$/;"	kind:function	line:285	language:Scheme
+make-complex-from-real-imag	exercise.scm	/^(define (make-complex-from-real-imag x y)$/;"	kind:function	line:1310	language:Scheme
+make-complex-mag-ang	exercise.scm	/^(define (make-complex-mag-ang r a)$/;"	kind:function	line:1313	language:Scheme
+make-cycle	ex3-13.scm	/^(define (make-cycle x)$/;"	kind:function	line:2	language:Scheme
+make-exponentiation	exercise.scm	/^(define (make-exponentiation base power)$/;"	kind:function	line:670	language:Scheme
+make-frame	exercise.scm	/^(define (make-frame origin edge1 edge2)$/;"	kind:function	line:548	language:Scheme
+make-frame	exercise.scm	/^(define (make-frame origin edge1 edge2)$/;"	kind:function	line:566	language:Scheme
+make-frame	gui/frame.scm	/^(define (make-frame origin edge1 edge2)$/;"	kind:function	line:2	language:Scheme
+make-from-mag-ang	arithmetic-core.scm	/^(define (make-from-mag-ang r a)$/;"	kind:function	line:63	language:Scheme
+make-from-mag-ang	common.scm	/^(define (make-from-mag-ang r a)$/;"	kind:function	line:66	language:Scheme
+make-from-mag-ang	exercise.scm	/^(define (make-from-mag-ang r a)$/;"	kind:function	line:1067	language:Scheme
+make-from-mag-ang	exercise.scm	/^(define (make-from-mag-ang r a)$/;"	kind:function	line:1190	language:Scheme
+make-from-mag-ang	exercise.scm	/^(define (make-from-mag-ang r a)$/;"	kind:function	line:1194	language:Scheme
+make-from-mag-ang	exercise.scm	/^(define (make-from-mag-ang r a)$/;"	kind:function	line:946	language:Scheme
+make-from-mag-ang	exercise.scm	/^(define (make-from-mag-ang r a)$/;"	kind:function	line:968	language:Scheme
+make-from-mag-ang-polar	exercise.scm	/^(define (make-from-mag-ang-polar r a)$/;"	kind:function	line:1030	language:Scheme
+make-from-mag-ang-rectangular	exercise.scm	/^(define (make-from-mag-ang-rectangular r a)$/;"	kind:function	line:1007	language:Scheme
+make-from-real-imag	arithmetic-core.scm	/^(define (make-from-real-imag x y)$/;"	kind:function	line:61	language:Scheme
+make-from-real-imag	common.scm	/^(define (make-from-real-imag x y)$/;"	kind:function	line:64	language:Scheme
+make-from-real-imag	exercise.scm	/^(define (make-from-real-imag x y) (cons x y))$/;"	kind:function	line:944	language:Scheme
+make-from-real-imag	exercise.scm	/^(define (make-from-real-imag x y)$/;"	kind:function	line:1064	language:Scheme
+make-from-real-imag	exercise.scm	/^(define (make-from-real-imag x y)$/;"	kind:function	line:1187	language:Scheme
+make-from-real-imag	exercise.scm	/^(define (make-from-real-imag x y)$/;"	kind:function	line:964	language:Scheme
+make-from-real-imag-polar	exercise.scm	/^(define (make-from-real-imag-polar x y)$/;"	kind:function	line:1025	language:Scheme
+make-from-real-imag-rectangular	exercise.scm	/^(define (make-from-real-imag-rectangular x y) $/;"	kind:function	line:1004	language:Scheme
+make-item	ex3-23.scm	/^(define (make-item value)$/;"	kind:function	line:8	language:Scheme
+make-joint	ex3-7.scm	/^(define (make-joint account account-password new-password)$/;"	kind:function	line:5	language:Scheme
+make-leaf	exercise.scm	/^(define (make-leaf symbol weight)$/;"	kind:function	line:786	language:Scheme
+make-leaf-set	exercise.scm	/^(define (make-leaf-set pairs)$/;"	kind:function	line:843	language:Scheme
+make-monitored	ex3-2.scm	/^(define (make-monitored f)$/;"	kind:function	line:1	language:Scheme
+make-point	exercise.scm	/^(define (make-point x y)$/;"	kind:function	line:278	language:Scheme
+make-point	gui/segment.scm	/^(define (make-point x y)$/;"	kind:function	line:2	language:Scheme
+make-polynomial	polynomial-package.scm	/^(define (make-polynomial var terms)$/;"	kind:function	line:94	language:Scheme
+make-queue	ex3-22.scm	/^(define (make-queue)$/;"	kind:function	line:1	language:Scheme
+make-queue	ex3-23.scm	/^(define (make-queue) (cons '() '()))$/;"	kind:function	line:6	language:Scheme
+make-queue	queue-util.scm	/^(define (make-queue)$/;"	kind:function	line:16	language:Scheme
+make-rat	exercise.scm	/^(define (make-rat n d)$/;"	kind:function	line:254	language:Scheme
+make-rational	ex2-79.scm	/^(define (make-rational n d)$/;"	kind:function	line:74	language:Scheme
+make-rational	ex2-83.scm	/^(define (make-rational n d)$/;"	kind:function	line:80	language:Scheme
+make-rational	ex2-84.scm	/^(define (make-rational n d)$/;"	kind:function	line:129	language:Scheme
+make-rational	ex2-85.scm	/^(define (make-rational n d)$/;"	kind:function	line:146	language:Scheme
+make-rational	exercise.scm	/^(define (make-rational n d)$/;"	kind:function	line:1267	language:Scheme
+make-rational	rational-package.scm	/^(define (make-rational n d)$/;"	kind:function	line:46	language:Scheme
+make-real	ex2-83.scm	/^(define (make-real n)$/;"	kind:function	line:105	language:Scheme
+make-real	ex2-84.scm	/^(define (make-real n)$/;"	kind:function	line:162	language:Scheme
+make-real	ex2-85.scm	/^(define (make-real n)$/;"	kind:function	line:175	language:Scheme
+make-real	real-package.scm	/^(define (make-real n)$/;"	kind:function	line:24	language:Scheme
+make-scheme-number	ex2-79.scm	/^(define (make-scheme-number n)$/;"	kind:function	line:27	language:Scheme
+make-scheme-number	ex2-83.scm	/^(define (make-scheme-number n)$/;"	kind:function	line:31	language:Scheme
+make-scheme-number	ex2-84.scm	/^(define (make-scheme-number n)$/;"	kind:function	line:75	language:Scheme
+make-scheme-number	ex2-85.scm	/^(define (make-scheme-number n)$/;"	kind:function	line:94	language:Scheme
+make-scheme-number	exercise.scm	/^(define (make-scheme-number n)$/;"	kind:function	line:1226	language:Scheme
+make-scheme-number	scheme-number-package.scm	/^(define (make-scheme-number n)$/;"	kind:function	line:24	language:Scheme
+make-segment	exercise.scm	/^(define (make-segment start end)$/;"	kind:function	line:268	language:Scheme
+make-segment	exercise.scm	/^(define (make-segment start-seg end-seg)$/;"	kind:function	line:576	language:Scheme
+make-segment	gui/segment.scm	/^(define (make-segment p1 p2)$/;"	kind:function	line:20	language:Scheme
+make-table	ex3-24.scm	/^(define (make-table same-key?)$/;"	kind:function	line:8	language:Scheme
+make-table	ex3-25.scm	/^(define (make-table)$/;"	kind:function	line:7	language:Scheme
+make-table	table-util-local.scm	/^(define (make-table)$/;"	kind:function	line:6	language:Scheme
+make-table	table-util.scm	/^(define (make-table)$/;"	kind:function	line:30	language:Scheme
+make-tree	exercise.scm	/^(define (make-tree entry left right)$/;"	kind:function	line:756	language:Scheme
+make-vect	exercise.scm	/^(define (make-vect xcord ycord)$/;"	kind:function	line:521	language:Scheme
+make-vect	gui/vector.scm	/^(define (make-vect x y)$/;"	kind:function	line:2	language:Scheme
+make-withdraw	chapter3.scm	/^(define (make-withdraw balance)$/;"	kind:function	line:18	language:Scheme
+map	exercise.scm	/^(define (map p sequence)$/;"	kind:function	line:462	language:Scheme
+map	exercise.scm	/^(define (map proc items)$/;"	kind:function	line:379	language:Scheme
+match-type	ex2-84.scm	/^(define (match-type from to)$/;"	kind:function	line:6	language:Scheme
+matrix-*-matrix	exercise.scm	/^(define (matrix-*-matrix m n)$/;"	kind:function	line:511	language:Scheme
+matrix-*-vector	exercise.scm	/^(define (matrix-*-vector m v)$/;"	kind:function	line:497	language:Scheme
+midpoint-segment	exercise.scm	/^(define (midpoint-segment segment)$/;"	kind:function	line:288	language:Scheme
+monitored-fn	test-ex3-2.scm	/^(define monitored-fn (make-monitored sqrt))$/;"	kind:function	line:6	language:Scheme
+monte-carlo	ex3-5.scm	/^(define (monte-carlo trials experiment)$/;"	kind:function	line:90	language:Scheme
+mul	arithmetic-core.scm	/^(define (mul x y) (apply-generic 'mul x y))$/;"	kind:function	line:69	language:Scheme
+mul	common.scm	/^(define (mul x y) (apply-generic 'mul x y))$/;"	kind:function	line:72	language:Scheme
+mul	exercise.scm	/^(define (mul x y) (apply-generic 'mul x y))$/;"	kind:function	line:1207	language:Scheme
+mul-complex	exercise.scm	/^(define (mul-complex z1 z2)$/;"	kind:function	line:923	language:Scheme
+my-equal?	exercise.scm	/^(define (my-equal? items1 items2)$/;"	kind:function	line:655	language:Scheme
+n1	test-ex2-79.scm	/^(define n1$/;"	kind:function	line:7	language:Scheme
+n1	test-ex2-83.scm	/^(define n1$/;"	kind:function	line:7	language:Scheme
+n2	test-ex2-79.scm	/^(define n2$/;"	kind:function	line:9	language:Scheme
+n2	test-ex2-83.scm	/^(define n2$/;"	kind:function	line:9	language:Scheme
+n3	test-ex2-79.scm	/^(define n3$/;"	kind:function	line:11	language:Scheme
+new-withdraw	chapter3.scm	/^(define new-withdraw$/;"	kind:function	line:10	language:Scheme
+next	exercise.scm	/^(define (next n)$/;"	kind:function	line:128	language:Scheme
+next-item	ex3-23.scm	/^(define (next-item item)$/;"	kind:function	line:14	language:Scheme
+nil	exercise.scm	/^(define nil '())$/;"	kind:function	line:345	language:Scheme
+normalize-sign	exercise.scm	/^(define (normalize-sign n d)$/;"	kind:function	line:260	language:Scheme
+op-table	exercise.scm	/^(define op-table (make-hash-table))$/;"	kind:function	line:1075	language:Scheme
+origin-frame	exercise.scm	/^(define (origin-frame frame)$/;"	kind:function	line:551	language:Scheme
+origin-frame	gui/frame.scm	/^(define (origin-frame frame)$/;"	kind:function	line:5	language:Scheme
+outline	exercise.scm	/^(define outline$/;"	kind:function	line:586	language:Scheme
+p	exercise.scm	/^(define (p) (p))$/;"	kind:function	line:2	language:Scheme
+package-table	arithmetic-core.scm	/^(define package-table (make-hash-table 'equal?))$/;"	kind:function	line:20	language:Scheme
+package-table	common.scm	/^(define package-table (make-hash-table 'equal?))$/;"	kind:function	line:23	language:Scheme
+package-table	exercise.scm	/^(define package-table (make-hash-table 'equal?))$/;"	kind:function	line:1093	language:Scheme
+paul-acc	test-ex3-7.scm	/^(define paul-acc$/;"	kind:function	line:25	language:Scheme
+percent	exercise.scm	/^(define (percent i)$/;"	kind:function	line:320	language:Scheme
+peter-acc	test-ex3-7.scm	/^(define peter-acc (make-account 100 'open-sesame))$/;"	kind:function	line:6	language:Scheme
+polar?	arithmetic-core.scm	/^(define (polar? z)$/;"	kind:function	line:17	language:Scheme
+polar?	common.scm	/^(define (polar? z)$/;"	kind:function	line:20	language:Scheme
+polar?	exercise.scm	/^(define (polar? z)$/;"	kind:function	line:989	language:Scheme
+poly-x-zero-1	test-ex2-87.scm	/^(define poly-x-zero-1$/;"	kind:function	line:7	language:Scheme
+poly-x2	test-ex2-87.scm	/^(define poly-x2$/;"	kind:function	line:9	language:Scheme
+poly-x3	test-ex2-87.scm	/^(define poly-x3$/;"	kind:function	line:11	language:Scheme
+poly-x4	test-ex2-87.scm	/^(define poly-x4$/;"	kind:function	line:13	language:Scheme
+power	exercise.scm	/^(define (power exp)$/;"	kind:function	line:679	language:Scheme
+prev-item	ex3-23.scm	/^(define (prev-item item)$/;"	kind:function	line:17	language:Scheme
+prime?	exercise.scm	/^(define (prime? n)$/;"	kind:function	line:76	language:Scheme
+print-point	exercise.scm	/^(define (print-point p)$/;"	kind:function	line:298	language:Scheme
+print-point	gui/segment.scm	/^(define (print-point p)$/;"	kind:function	line:11	language:Scheme
+print-queue	ex3-21.scm	/^(define (print-queue queue)$/;"	kind:function	line:3	language:Scheme
+print-table	test-ex3-25.scm	/^(define print-table (table1 'print-table))$/;"	kind:function	line:8	language:Scheme
+product	exercise.scm	/^(define (product term a next b)$/;"	kind:function	line:143	language:Scheme
+product	exercise.scm	/^(define (product term a next b)$/;"	kind:function	line:169	language:Scheme
+product	exercise.scm	/^(define (product term a next b)$/;"	kind:function	line:189	language:Scheme
+project	ex2-85.scm	/^(define (project x)$/;"	kind:function	line:70	language:Scheme
+put	arithmetic-core.scm	/^(define (put operation-symbol type-symbol operation)$/;"	kind:function	line:23	language:Scheme
+put	common.scm	/^(define (put operation-symbol type-symbol operation)$/;"	kind:function	line:26	language:Scheme
+put	exercise.scm	/^(define (put op type item)$/;"	kind:function	line:1077	language:Scheme
+put	exercise.scm	/^(define (put operation-symbol type-symbol operation)$/;"	kind:function	line:1096	language:Scheme
+q1	test-ex3-21.scm	/^(define q1 (make-queue))$/;"	kind:function	line:4	language:Scheme
+q1	test-ex3-22.scm	/^(define q1 (make-queue))$/;"	kind:function	line:4	language:Scheme
+r	ex2-85.scm	/^(define r (make-real 2.0))$/;"	kind:function	line:298	language:Scheme
+r1	test-ex2-79.scm	/^(define r1$/;"	kind:function	line:22	language:Scheme
+r1	test-ex2-83.scm	/^(define r1$/;"	kind:function	line:18	language:Scheme
+r2	test-ex2-79.scm	/^(define r2$/;"	kind:function	line:24	language:Scheme
+r2	test-ex2-83.scm	/^(define r2$/;"	kind:function	line:20	language:Scheme
+r3	test-ex2-79.scm	/^(define r3$/;"	kind:function	line:26	language:Scheme
+r3	test-ex2-83.scm	/^(define r3$/;"	kind:function	line:22	language:Scheme
+r4	test-ex2-79.scm	/^(define r4$/;"	kind:function	line:28	language:Scheme
+r5	test-ex2-79.scm	/^(define r5$/;"	kind:function	line:30	language:Scheme
+r6	test-ex2-79.scm	/^(define r6$/;"	kind:function	line:32	language:Scheme
+ra	ex2-85.scm	/^(define ra (make-rational 1 2))$/;"	kind:function	line:299	language:Scheme
+radius	ex3-5.scm	/^(define (radius circle)$/;"	kind:function	line:46	language:Scheme
+raise	arithmetic-core.scm	/^(define (raise x)$/;"	kind:function	line:78	language:Scheme
+raise	ex2-83.scm	/^(define (raise x)$/;"	kind:function	line:5	language:Scheme
+raise	ex2-84.scm	/^(define (raise x)$/;"	kind:function	line:41	language:Scheme
+raise	ex2-85.scm	/^(define (raise x)$/;"	kind:function	line:66	language:Scheme
+random	arithmetic-util.scm	/^(define (random n)$/;"	kind:function	line:6	language:Scheme
+random-in-range	ex3-5.scm	/^(define (random-in-range low high)$/;"	kind:function	line:100	language:Scheme
+real-part	arithmetic-core.scm	/^(define (real-part z) (apply-generic 'real-part z))$/;"	kind:function	line:57	language:Scheme
+real-part	common.scm	/^(define (real-part z) (apply-generic 'real-part z))$/;"	kind:function	line:60	language:Scheme
+real-part	exercise.scm	/^(define (real-part z) (apply-generic 'real-part z))$/;"	kind:function	line:1182	language:Scheme
+real-part	exercise.scm	/^(define (real-part z) (car z))$/;"	kind:function	line:933	language:Scheme
+real-part	exercise.scm	/^(define (real-part z)$/;"	kind:function	line:1035	language:Scheme
+real-part	exercise.scm	/^(define (real-part z)$/;"	kind:function	line:954	language:Scheme
+real-part-polar	exercise.scm	/^(define (real-part-polar z)$/;"	kind:function	line:1015	language:Scheme
+real-part-rectangular	exercise.scm	/^(define (real-part-rectangular z) (car z))$/;"	kind:function	line:993	language:Scheme
+real1	test-ex2-83.scm	/^(define real1$/;"	kind:function	line:35	language:Scheme
+real2	test-ex2-83.scm	/^(define real2$/;"	kind:function	line:37	language:Scheme
+real3	test-ex2-83.scm	/^(define real3$/;"	kind:function	line:39	language:Scheme
+rear-delete-queue!	ex3-23.scm	/^(define (rear-delete-queue! queue)$/;"	kind:function	line:66	language:Scheme
+rear-insert-queue!	ex3-23.scm	/^(define (rear-insert-queue! queue value)$/;"	kind:function	line:36	language:Scheme
+rear-ptr	ex3-23.scm	/^(define (rear-ptr queue) (cdr queue))$/;"	kind:function	line:2	language:Scheme
+rear-ptr	queue-util.scm	/^(define (rear-ptr queue)$/;"	kind:function	line:4	language:Scheme
+rear-queue	ex3-23.scm	/^(define (rear-queue queue)$/;"	kind:function	line:31	language:Scheme
+rect-area	ex3-5.scm	/^(define (rect-area circle)$/;"	kind:function	line:71	language:Scheme
+rectangular?	arithmetic-core.scm	/^(define (rectangular? z)$/;"	kind:function	line:14	language:Scheme
+rectangular?	common.scm	/^(define (rectangular? z)$/;"	kind:function	line:17	language:Scheme
+rectangular?	exercise.scm	/^(define (rectangular? z)$/;"	kind:function	line:986	language:Scheme
+recursive-calc	exercise.scm	/^(define (recursive-calc x)$/;"	kind:function	line:29	language:Scheme
+repeated	exercise.scm	/^(define (repeated f n)$/;"	kind:function	line:245	language:Scheme
+report-prime	exercise.scm	/^(define (report-prime elapsed-time)$/;"	kind:function	line:72	language:Scheme
+reverse	exercise.scm	/^(define (reverse items)$/;"	kind:function	line:332	language:Scheme
+reverse	exercise.scm	/^(define (reverse items)$/;"	kind:function	line:339	language:Scheme
+right-branch	exercise.scm	/^(define (right-branch tree)$/;"	kind:function	line:753	language:Scheme
+right-branch	exercise.scm	/^(define (right-branch tree)$/;"	kind:function	line:807	language:Scheme
+right-split	gui/painter.scm	/^(define (right-split painter n)$/;"	kind:function	line:98	language:Scheme
+rock-lyrics	exercise.scm	/^(define rock-lyrics$/;"	kind:function	line:902	language:Scheme
+rotate180	exercise.scm	/^(define (rotate180 painter)$/;"	kind:function	line:621	language:Scheme
+rotate270	exercise.scm	/^(define (rotate270 painter)$/;"	kind:function	line:627	language:Scheme
+rotate270	gui/painter.scm	/^(define (rotate270 painter)$/;"	kind:function	line:82	language:Scheme
+rotate90	gui/painter.scm	/^(define (rotate90 painter)$/;"	kind:function	line:31	language:Scheme
+runtime	exercise.scm	/^(define (runtime)$/;"	kind:function	line:58	language:Scheme
+same-parity	exercise.scm	/^(define (same-parity first-elem . option)$/;"	kind:function	line:355	language:Scheme
+sample-message	exercise.scm	/^(define sample-message '(0 1 1 0 0 1 0 1 0 1 1 1 0))$/;"	kind:function	line:858	language:Scheme
+sample-message-alphabet	exercise.scm	/^(define sample-message-alphabet '(A D A B B C A))$/;"	kind:function	line:879	language:Scheme
+sample-pairs	exercise.scm	/^(define sample-pairs '((A 4) (B 2) (C 1) (D 1)))$/;"	kind:function	line:896	language:Scheme
+sample-tree	exercise.scm	/^(define sample-tree$/;"	kind:function	line:851	language:Scheme
+scale-vect	exercise.scm	/^(define (scale-vect s v)$/;"	kind:function	line:542	language:Scheme
+scale-vect	gui/vector.scm	/^(define (scale-vect s v)$/;"	kind:function	line:19	language:Scheme
+search-for-answer-of-lambda	exercise.scm	/^(define (search-for-answer-of-lambda)$/;"	kind:function	line:224	language:Scheme
+search-for-primes	exercise.scm	/^(define (search-for-primes start end found-prime goal)$/;"	kind:function	line:94	language:Scheme
+second-accumulator	test-ex3-1.scm	/^(define second-accumulator (make-accumulator 100))$/;"	kind:function	line:7	language:Scheme
+segments	gui/main.scm	/^(define segments (list$/;"	kind:function	line:22	language:Scheme
+segments->painter	gui/painter.scm	/^(define (segments->painter segment-list)$/;"	kind:function	line:1	language:Scheme
+set-front-ptr!	ex3-23.scm	/^(define (set-front-ptr! queue item) (set-car! queue item))$/;"	kind:function	line:3	language:Scheme
+set-front-ptr!	queue-util.scm	/^(define (set-front-ptr! queue item)$/;"	kind:function	line:7	language:Scheme
+set-next-item!	ex3-23.scm	/^(define (set-next-item! item next)$/;"	kind:function	line:11	language:Scheme
+set-prev-item!	ex3-23.scm	/^(define (set-prev-item! item prev)$/;"	kind:function	line:20	language:Scheme
+set-rear-ptr!	ex3-23.scm	/^(define (set-rear-ptr! queue item) (set-cdr! queue item))$/;"	kind:function	line:4	language:Scheme
+set-rear-ptr!	queue-util.scm	/^(define (set-rear-ptr! queue item)$/;"	kind:function	line:10	language:Scheme
+shrink-to-upper-right	gui/painter.scm	/^(define (shrink-to-upper-right painter)$/;"	kind:function	line:25	language:Scheme
+smallest-divisor	exercise.scm	/^(define (smallest-divisor n)$/;"	kind:function	line:79	language:Scheme
+square	arithmetic-util.scm	/^(define (square x)$/;"	kind:function	line:3	language:Scheme
+square	common.scm	/^(define (square x)$/;"	kind:function	line:1	language:Scheme
+square	exercise.scm	/^(define (square x)$/;"	kind:function	line:232	language:Scheme
+square-limit	gui/painter.scm	/^(define (square-limit painter n)$/;"	kind:function	line:71	language:Scheme
+square-list	exercise.scm	/^(define (square-list items)$/;"	kind:function	line:373	language:Scheme
+square-list-with-map	exercise.scm	/^(define (square-list-with-map items)$/;"	kind:function	line:385	language:Scheme
+square-product	exercise.scm	/^(define (square-product a b)$/;"	kind:function	line:155	language:Scheme
+square-tree	exercise.scm	/^(define (square-tree tree)$/;"	kind:function	line:421	language:Scheme
+square-tree	exercise.scm	/^(define (square-tree tree)$/;"	kind:function	line:435	language:Scheme
+square-tree-with-map	exercise.scm	/^(define (square-tree-with-map tree)$/;"	kind:function	line:450	language:Scheme
+squash-inwards	gui/painter.scm	/^(define (squash-inwards painter painter)$/;"	kind:function	line:37	language:Scheme
+start-prime-test	exercise.scm	/^(define (start-prime-test n start-time)$/;"	kind:function	line:68	language:Scheme
+start-search-for-primes-test	exercise.scm	/^(define (start-search-for-primes-test n start-time)$/;"	kind:function	line:117	language:Scheme
+start-segment	exercise.scm	/^(define (start-segment line-seg)$/;"	kind:function	line:579	language:Scheme
+start-segment	exercise.scm	/^(define (start-segment segment)$/;"	kind:function	line:271	language:Scheme
+start-segment	gui/segment.scm	/^(define (start-segment s)$/;"	kind:function	line:23	language:Scheme
+sub	arithmetic-core.scm	/^(define (sub x y) (apply-generic 'sub x y))$/;"	kind:function	line:68	language:Scheme
+sub	common.scm	/^(define (sub x y) (apply-generic 'sub x y))$/;"	kind:function	line:71	language:Scheme
+sub	exercise.scm	/^(define (sub x y) (apply-generic 'sub x y))$/;"	kind:function	line:1206	language:Scheme
+sub-complex	exercise.scm	/^(define (sub-complex z1 z2)$/;"	kind:function	line:919	language:Scheme
+sub-vect	exercise.scm	/^(define (sub-vect v w)$/;"	kind:function	line:536	language:Scheme
+sub-vect	gui/vector.scm	/^(define (sub-vect v1 v2)$/;"	kind:function	line:15	language:Scheme
+successive-merge	exercise.scm	/^(define (successive-merge set)$/;"	kind:function	line:885	language:Scheme
+sum	exercise.scm	/^(define (sum term a next b)$/;"	kind:function	line:134	language:Scheme
+sum	exercise.scm	/^(define (sum term a next b)$/;"	kind:function	line:186	language:Scheme
+symbol-leaf	exercise.scm	/^(define (symbol-leaf x)$/;"	kind:function	line:792	language:Scheme
+symbols	exercise.scm	/^(define (symbols tree)$/;"	kind:function	line:810	language:Scheme
+symbols-of-rock-songs	exercise.scm	/^(define symbols-of-rock-songs $/;"	kind:function	line:899	language:Scheme
+table1	test-ex3-24.scm	/^(define table1 (make-table equal?))$/;"	kind:function	line:5	language:Scheme
+table1	test-ex3-25.scm	/^(define table1 (make-table))$/;"	kind:function	line:5	language:Scheme
+table1	test-table-util-local.scm	/^(define table1 (make-table))$/;"	kind:function	line:5	language:Scheme
+table1	test-table-util.scm	/^(define table1 (make-table))$/;"	kind:function	line:5	language:Scheme
+test	exercise.scm	/^(define (test x y)$/;"	kind:function	line:4	language:Scheme
+timed-prime-test	exercise.scm	/^(define (timed-prime-test n)$/;"	kind:function	line:63	language:Scheme
+timed-search-for-primes-test	exercise.scm	/^(define (timed-search-for-primes-test n)$/;"	kind:function	line:111	language:Scheme
+tolerance	exercise.scm	/^(define tolerance 0.00001)$/;"	kind:function	line:206	language:Scheme
+tower	ex2-85.scm	/^(define tower$/;"	kind:function	line:4	language:Scheme
+transform-painter	gui/painter.scm	/^(define (transform-painter painter origin corner1 corner2)$/;"	kind:function	line:10	language:Scheme
+transpose	exercise.scm	/^(define (transpose mat)$/;"	kind:function	line:505	language:Scheme
+tree->list-1	exercise.scm	/^(define (tree->list-1 tree)$/;"	kind:function	line:759	language:Scheme
+tree->list-2	exercise.scm	/^(define (tree->list-2 tree)$/;"	kind:function	line:766	language:Scheme
+tree-map	exercise.scm	/^(define (tree-map proc tree)$/;"	kind:function	line:443	language:Scheme
+type-tag	arithmetic-core.scm	/^(define (type-tag datum)$/;"	kind:function	line:4	language:Scheme
+type-tag	common.scm	/^(define (type-tag datum)$/;"	kind:function	line:7	language:Scheme
+type-tag	exercise.scm	/^(define (type-tag datum)$/;"	kind:function	line:976	language:Scheme
+union-set	exercise.scm	/^(define (union-set set1 set2)$/;"	kind:function	line:710	language:Scheme
+union-set	exercise.scm	/^(define (union-set set1 set2)$/;"	kind:function	line:732	language:Scheme
+up-split	gui/painter.scm	/^(define (up-split painter n)$/;"	kind:function	line:76	language:Scheme
+upper-bound	exercise.scm	/^(define (upper-bound interval)$/;"	kind:function	line:310	language:Scheme
+upper-x-coordinate	ex3-5.scm	/^(define (upper-x-coordinate circle)$/;"	kind:function	line:49	language:Scheme
+upper-y-coordinate	ex3-5.scm	/^(define (upper-y-coordinate circle)$/;"	kind:function	line:53	language:Scheme
+v0	exercise.scm	/^(define v0 (make-vect 1 2))$/;"	kind:function	line:560	language:Scheme
+v1	exercise.scm	/^(define v1 (make-vect 2 4))$/;"	kind:function	line:561	language:Scheme
+v2	exercise.scm	/^(define v2 (make-vect 4 8))$/;"	kind:function	line:562	language:Scheme
+value-of-item	ex3-23.scm	/^(define (value-of-item item)$/;"	kind:function	line:23	language:Scheme
+w	test-ex3-12.scm	/^(define w (append! x y))$/;"	kind:function	line:11	language:Scheme
+weight	exercise.scm	/^(define (weight tree)$/;"	kind:function	line:815	language:Scheme
+weight-leaf	exercise.scm	/^(define (weight-leaf x)$/;"	kind:function	line:795	language:Scheme
+withdraw	chapter3.scm	/^(define (withdraw amount)$/;"	kind:function	line:4	language:Scheme
+x	ex3-16.scm	/^(define x (list 'a 'b))$/;"	kind:function	line:8	language:Scheme
+x	ex3-17.scm	/^(define x (list 'a 'b))$/;"	kind:function	line:8	language:Scheme
+x	exercise.scm	/^(define x (list (list 1 2) (list 3 4)))$/;"	kind:function	line:390	language:Scheme
+x	test-ex3-12.scm	/^(define x (list 'a 'b))$/;"	kind:function	line:4	language:Scheme
+x-coordinate	ex3-5.scm	/^(define (x-coordinate point)$/;"	kind:function	line:65	language:Scheme
+x-point	exercise.scm	/^(define (x-point point)$/;"	kind:function	line:281	language:Scheme
+x-point	gui/segment.scm	/^(define (x-point p)$/;"	kind:function	line:5	language:Scheme
+xcor-vect	exercise.scm	/^(define (xcor-vect v)$/;"	kind:function	line:524	language:Scheme
+xcor-vect	gui/vector.scm	/^(define (xcor-vect v)$/;"	kind:function	line:5	language:Scheme
+y	test-ex3-12.scm	/^(define y (list 'c 'd))$/;"	kind:function	line:5	language:Scheme
+y-coordinate	ex3-5.scm	/^(define (y-coordinate point)$/;"	kind:function	line:68	language:Scheme
+y-point	exercise.scm	/^(define (y-point point)$/;"	kind:function	line:284	language:Scheme
+y-point	gui/segment.scm	/^(define (y-point p)$/;"	kind:function	line:8	language:Scheme
+ycor-vect	exercise.scm	/^(define (ycor-vect v)$/;"	kind:function	line:527	language:Scheme
+ycor-vect	gui/vector.scm	/^(define (ycor-vect v)$/;"	kind:function	line:8	language:Scheme
+z	ex3-13.scm	/^(define z (make-cycle (list 'a 'b 'c)))/;"	kind:function	line:6	language:Scheme
+z	test-ex3-12.scm	/^(define z (append x y))$/;"	kind:function	line:6	language:Scheme
+z1	ex3-16.scm	/^(define z1 (cons x x))$/;"	kind:function	line:9	language:Scheme
+z1	ex3-17.scm	/^(define z1 (cons x x))$/;"	kind:function	line:9	language:Scheme
+z1	exercise.scm	/^(define z1 (make-from-real-imag 3 4))$/;"	kind:function	line:949	language:Scheme
+z1	exercise.scm	/^(define z1 (make-from-real-imag-rectangular 5 8))$/;"	kind:function	line:1011	language:Scheme
+z1	exercise.scm	/^(define z1$/;"	kind:function	line:1323	language:Scheme
+z1-mag-ang	test-ex2-79.scm	/^(define z1-mag-ang$/;"	kind:function	line:73	language:Scheme
+z1-real-imag	test-ex2-79.scm	/^(define z1-real-imag$/;"	kind:function	line:51	language:Scheme
+z2	ex3-16.scm	/^(define z2 (cons (list 'a 'b) (list 'a 'b)))$/;"	kind:function	line:10	language:Scheme
+z2	ex3-17.scm	/^(define z2 (cons (list 'a 'b) (list 'a 'b)))$/;"	kind:function	line:10	language:Scheme
+z2	exercise.scm	/^(define z2 (make-from-real-imag 2 9))$/;"	kind:function	line:950	language:Scheme
+z2	exercise.scm	/^(define z2 (make-from-real-imag-rectangular 7 4))$/;"	kind:function	line:1012	language:Scheme
+z2-mag-ang	test-ex2-79.scm	/^(define z2-mag-ang$/;"	kind:function	line:75	language:Scheme
+z2-real-imag	test-ex2-79.scm	/^(define z2-real-imag$/;"	kind:function	line:53	language:Scheme
+z3-mag-ang	test-ex2-79.scm	/^(define z3-mag-ang$/;"	kind:function	line:77	language:Scheme
+z3-real-imag	test-ex2-79.scm	/^(define z3-real-imag$/;"	kind:function	line:55	language:Scheme
+z4-mag-ang	test-ex2-79.scm	/^(define z4-mag-ang$/;"	kind:function	line:79	language:Scheme
+z4-real-imag	test-ex2-79.scm	/^(define z4-real-imag$/;"	kind:function	line:57	language:Scheme
