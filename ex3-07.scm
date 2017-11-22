@@ -1,4 +1,4 @@
-(load "./ex3-3.scm")
+(load "./ex3-03.scm")
 ;; 参考
 ;; http://www.serendip.ws/archives/1216
 ;; make-account には手を加えずに、make-joint で追加口座のパスワードを管理する

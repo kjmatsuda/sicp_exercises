@@ -1,11 +1,12 @@
 (add-load-path ".")
-(load "ex3-1.scm")
+(load "ex3-01.scm")
 (use gauche.test)
 (test-start "ex3-1")
 (test-section "make-accumulator")
 (define first-accumulator (make-accumulator 10))
 (define second-accumulator (make-accumulator 100))
 (test-section "first-accumulator")
+
 (test* "first-accumulator"
  (first-accumulator 2)
  12)

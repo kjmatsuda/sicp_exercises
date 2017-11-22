@@ -1,5 +1,5 @@
 (add-load-path ".")
-(load "ex3-4.scm")
+(load "ex3-04.scm")
 (use gauche.test)
 (test-start "ex3-4")
 (test-section "make-account")

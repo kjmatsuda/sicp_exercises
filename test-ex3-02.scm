@@ -1,5 +1,5 @@
 (add-load-path ".")
-(load "ex3-2.scm")
+(load "ex3-02.scm")
 (use gauche.test)
 (test-start "ex3-2")
 (test-section "make-monitored")
