@@ -5,15 +5,16 @@
             ;; bがマイナスの場合
             (error "square less than 0 -- SQUARER" (get-value b))
             ;; bがプラスの場合
-            (set-value! a (ルート (get-value b))))
+            (set-value! a (sqrt (get-value b) me)))
         ;; bに値がない場合
         (if (has-value? a)
             ;; aに値がある場合
-            (set-value! b (* (get-value a) (get-value a))))))
+            (set-value! b (* (get-value a) (get-value a)) me))))
   (define (process-forget-value)
     (forget-value! b me)
     (forget-value! a me)
     (process-new-value))
+  
   (define (me request)
     (cond ((eq? request 'I-have-a-value)
            (process-new-value))
